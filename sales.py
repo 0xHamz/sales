@@ -59,6 +59,8 @@ plt.xlabel('Month and year')
 plt.ylabel('Sales in $')
 plt.title('Sales over Time')
 plt.grid(True)
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
+
 plt.show()
 
 # %%
@@ -78,6 +80,7 @@ plt.xlabel('Month')
 plt.ylabel('Sales value ($)')
 plt.title('Sales per month')
 plt.xticks(range(len(df3)), df3['month'])
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
 
 plt.show()
 
@@ -93,6 +96,7 @@ plt.xlabel('Quarter')
 plt.ylabel('Sales value ($)')
 plt.title('Sales per quarter')
 plt.xticks(range(len(df4)), df4['qtr'], rotation=0, ha='right')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
 
 plt.show()
 
@@ -110,6 +114,8 @@ df8=total_sale.reset_index()
 sns.barplot(data=df8, x=total_sale.values,y='productline', palette='RdPu')
 plt.xlabel('Sale value (in $)')
 plt.title('Sale value per product line')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
+
 plt.show()
 
 # %%
@@ -128,6 +134,8 @@ sns.barplot(x=sorted_sales_by_country.values, y=sorted_sales_by_country.index, p
 plt.xlabel('in $')
 plt.ylabel('Country')
 plt.title('Sales per country')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
+
 plt.show()
 
 # %%
@@ -153,6 +161,7 @@ plt.xlabel('Month')
 plt.ylabel('Number of orders')
 plt.title('Orders per month')
 plt.xticks(range(len(df)), df['month'], rotation=0, ha='right')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
 
 plt.show()
 
@@ -168,6 +177,7 @@ plt.xlabel('Quarter')
 plt.ylabel('Number of Orders')
 plt.title('Orders per quarter')
 plt.xticks(range(len(df2)), df2['qtr'], rotation=0, ha='right')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
 
 plt.show()
 
@@ -209,6 +219,8 @@ colors = plt.cm.Set3(range(len(df6['Other statuses'])))
 plt.figure(figsize=(6, 4))
 plt.pie(df6['Percentage Share'], labels=df6['Other statuses'], autopct='%.1f%%', colors=colors)
 plt.title('Order statuses different than "Shipped"')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
+
 plt.show()
 
 # %%
@@ -232,6 +244,8 @@ df7=product_line_mean.reset_index()
 sns.catplot(data=df7, y='productline', x=product_line_mean.values, color='Purple')
 plt.title('Avegare price for each product line')
 plt.xlabel('Average price')
+plt.legend(title=None)  # Atur legend menjadi None untuk menghilangkannya
+
 plt.show()
 
 # %%
