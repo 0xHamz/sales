@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # %%
-sales=pd.read_csv(r'C:\Users\wjaku\Downloads\sales\sales_data_sample.csv', encoding='unicode_escape')
+sales=pd.read_csv(r'sales_data_sample.csv', encoding='unicode_escape')
 
 # %%
 sales.head(4)
