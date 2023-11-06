@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+plt.rcParams['text.usetex'] = False
+
 # %%
 sales=pd.read_csv(r'sales_data_sample.csv', encoding='unicode_escape')
 
